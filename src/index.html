@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="App">
+        <h1>Log Dashboard</h1>
+        <div>
+            <input type="file" id="fileInput">
+            <button onclick="handleFileUpload()">Upload</button>
+        </div>
+        <div>
+            <label for="logLevel">Log Level:</label>
+            <select id="logLevel" onchange="fetchLogs()">
+                <option value="info">Info</option>
+                <option value="warn">Warn</option>
+                <option value="error">Error</option>
+                <option value="success">Success</option>
+            </select>
+        </div>
+        <div>
+            <h2>Logs</h2>
+            <ul id="logsList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
