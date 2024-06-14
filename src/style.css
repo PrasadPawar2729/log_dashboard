@@ -99,3 +99,16 @@ ul#logsList li.error {
 ul#logsList li.success {
     border-color: #4CAF50;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
